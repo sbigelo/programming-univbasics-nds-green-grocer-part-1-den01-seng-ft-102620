@@ -27,7 +27,7 @@ def consolidate_cart(cart)
   new_cart = []
 
   while index < cart.length 
-    current_item = find_item_by_name_in_collection(grocery_item[:item], new_cart)
+    current_item = find_item_by_name_in_collection(gitem[:item], new_cart)
     if current_item != nil
       current_item[:count] += 1
     else current_item = {
